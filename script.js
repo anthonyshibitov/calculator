@@ -122,13 +122,13 @@ addButton.addEventListener('click', (e) => {
         displayValue = '';
         redisplay();
     } else { //need to calculate
-        calculate('+', aValue, displayValue);
+        calculate(operatorValue, aValue, displayValue);
         aValue = displayValue;
         displayValue = '';
         redisplay();
     }
     operatorValue = '+';
-    operatorText.innerHTML = aValue + '+';
+    operatorText.innerHTML = aValue + ' +';
 });
 
 const subButton = document.querySelector('#sub-button');
@@ -139,13 +139,13 @@ subButton.addEventListener('click', (e) => {
         displayValue = '';
         redisplay();
     } else { //need to calculate
-        calculate('-', aValue, displayValue);
+        calculate(operatorValue, aValue, displayValue);
         aValue = displayValue;
         displayValue = '';
         redisplay();
     }
     operatorValue = '-';
-    operatorText.innerHTML = aValue + '-';
+    operatorText.innerHTML = aValue + ' -';
 });
 
 const mulButton = document.querySelector('#mul-button');
@@ -156,13 +156,13 @@ mulButton.addEventListener('click', (e) => {
         displayValue = '';
         redisplay();
     } else { //need to calculate
-        calculate('*', aValue, displayValue);
+        calculate(operatorValue, aValue, displayValue);
         aValue = displayValue;
         displayValue = '';
         redisplay();
     }
     operatorValue = '*';
-    operatorText.innerHTML = aValue + '*';
+    operatorText.innerHTML = aValue + ' *';
 });
 
 const divButton = document.querySelector('#div-button');
@@ -173,13 +173,13 @@ divButton.addEventListener('click', (e) => {
         displayValue = '';
         redisplay();
     } else { //need to calculate
-        calculate('/', aValue, displayValue);
+        calculate(operatorValue, aValue, displayValue);
         aValue = displayValue;
         displayValue = '';
         redisplay();
     }
     operatorValue = '/';
-    operatorText.innerHTML = aValue + '/';
+    operatorText.innerHTML = aValue + ' /';
 });
 
 

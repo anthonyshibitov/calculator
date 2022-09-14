@@ -9,23 +9,42 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="operator-text"></div>
-    <div class="display-text"></div>
-    <button id="one-button">1</button>
-    <button id="two-button">2</button>
-    <button id="three-button">3</button>
-    <button id="four-button">4</button>
-    <button id="five-button">5</button>
-    <button id="six-button">6</button>
-    <button id="seven-button">7</button>
-    <button id="eight-button">8</button>
-    <button id="nine-button">9</button>
-    <button id="zero-button">0</button>
-    <button id="clear-button">CLEAR</button>
-    <button id="add-button">+</button>
-    <button id="sub-button">-</button>
-    <button id="mul-button">*</button>
-    <button id="div-button">/</button>
-    <button id="calc-button">=</button>
+    <div class="calc-container">
+        <div class="text-container">
+            <div class="operator-text"></div>
+            <div class="display-text"></div>
+        </div>
+
+        <div class="button-container">
+            <div class="row row-one">
+                <button id="one-button">1</button>
+                <button id="two-button">2</button>
+                <button id="three-button">3</button>
+                <button id="add-button">+</button>
+            </div>
+
+            <div class="row row-two">
+                <button id="four-button">4</button>
+                <button id="five-button">5</button>
+                <button id="six-button">6</button>
+                <button id="sub-button">-</button>
+            </div>
+
+            <div class="row row-three">
+                <button id="seven-button">7</button>
+                <button id="eight-button">8</button>
+                <button id="nine-button">9</button>
+                <button id="mul-button">*</button>
+            </div>
+            
+            <div class="row row-four">
+                <button id="zero-button">0</button>
+                <button id="clear-button">CL</button>
+                <button id="calc-button">=</button>
+                <button id="div-button">/</button>
+            </div> 
+        </div>
+    </div>
+    
 </body>
 </html>
